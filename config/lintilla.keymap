@@ -676,14 +676,14 @@
 
         alphas {
             bindings = <
-           &none                                                                                                                                                        &none
-&sl_mod 7  &kp Q       &kp W       &kp F        &kp P        &kp B                                                   &kp J      &kp L        &kp U        &kp Y         &kp SQT     &sl_mod 7
-&sl_mod 6  &hm LGUI A  &hm LALT R  &hm LCTRL S  &hm LSHFT T  &kp G                                                   &kp M      &hm LSHFT N  &hm LCTRL E  &hm LALT I    &hm LGUI O  &sl_mod 6
-           &kp Z       &hm RALT X  &kp C        &kp D        &kp V                                                   &kp K      &kp H        &kp COMMA    &hm RALT DOT  &kp FSLH
-                                                             &lt 2 TAB  &lt 1 SPC  &lt 1 ESC  &lt 5 DEL  &lt 3 BSPC  &lt 4 RET
+                          &none                                                                                                                                              &none
+&kp TAB                   &kp Q        &kp W       &kp E       &kp R  &kp T                                                   &kp Y      &kp U  &kp I       &kp O            &kp P                &kp SQT
+&mt LS(LA(LC(LGUI))) ESC  &hm LCTRL A  &hm LALT S  &hm LGUI D  &kp F  &kp G                                                   &kp H      &kp J  &hm RGUI K  &hm RALT L       &hm RCTRL SEMICOLON  &kp NON_US_BACKSLASH
+                          &kp Z        &hm RALT X  &kp C       &kp V  &kp B                                                   &kp N      &kp M  &kp COMMA   &hm RALT PERIOD  &kp SLASH
+                                                                      &lt 2 TAB  &lt 1 SPC  &lt 1 ESC  &lt 5 DEL  &lt 3 BSPC  &lt 4 RET
             >;
 
-            label = "Colemak-dh";
+            label = "qwert";
         };
 
         nav {
