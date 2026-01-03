@@ -223,468 +223,73 @@
             #binding-cells = <1>;
             bindings = <&macro_param_1to2 &bt BT_SEL MACRO_PLACEHOLDER &bt BT_CLR>;
         };
-
-        win_ellipsis: win_ellipsis {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N1 &kp KP_N3 &kp KP_N3>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        win_ae_low: win_ae_low {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N8>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        win_ae_up: win_ae_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N6>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        win_oe_low: win_oe_low {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N6>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        win_oe_up: win_oe_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N4>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        win_ue_low: win_ue_low {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N2>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        win_ue_up: win_ue_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N0>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        win_ie_low: win_ie_low {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N9>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        win_ie_up: win_ie_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N7>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        win_eaigu_low: win_eaigu_low {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N3>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        win_eaigu_up: win_eaigu_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        win_agrave_low: win_agrave_low {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N4>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        win_agrave_up: win_agrave_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N2>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        win_sz: win_sz {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N3>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        win_ostroke: win_ostroke {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N8>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        win_emdash: win_emdash {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N1 &kp KP_N5 &kp KP_N1>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        win_endash: win_endash {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N1 &kp KP_N5 &kp KP_N0>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        win_euro: win_euro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N8>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        win_deg: win_deg {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N6>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        win_qo: win_qo {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N1>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        win_qc: win_qc {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N1 &kp KP_N8 &kp KP_N7>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        linux_ellipsis: linux_ellipsis {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp RALT &kp DOT &kp DOT>;
-        };
-
-        linux_ae_low: linux_ae_low {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp RALT &kp A &kp DQT>;
-        };
-
-        linux_ae_up: linux_ae_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp RALT &kp LS(A) &kp DQT>;
-        };
-
-        linux_oe_low: linux_oe_low {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp RALT &kp O &kp DQT>;
-        };
-
-        linux_oe_up: linux_oe_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp RALT &kp LS(O) &kp DQT>;
-        };
-
-        linux_ue_low: linux_ue_low {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp RALT &kp U &kp DQT>;
-        };
-
-        linux_ue_up: linux_ue_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp RALT &kp LS(U) &kp DQT>;
-        };
-
-        linux_ie_low: linux_ie_low {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp RALT &kp I &kp DQT>;
-        };
-
-        linux_ie_up: linux_ie_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp RALT &kp LS(I) &kp DQT>;
-        };
-
-        linux_eaigu_low: linux_eaigu_low {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp RALT &kp E &kp SQT>;
-        };
-
-        linux_eaigu_up: linux_eaigu_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp RALT &kp LS(E) &kp SQT>;
-        };
-
-        linux_agrave_low: linux_agrave_low {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp RALT &kp A &kp GRAVE>;
-        };
-
-        linux_agrave_up: linux_agrave_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp RALT &kp LS(A) &kp GRAVE>;
-        };
-
-        linux_sz: linux_sz {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp RALT &kp S &kp S>;
-        };
-
-        linux_ostroke: linux_ostroke {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp RALT &kp O &kp FSLH>;
-        };
-
-        linux_emdash: linux_emdash {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp RALT &kp MINUS &kp MINUS &kp MINUS>;
-        };
-
-        linux_endash: linux_endash {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp RALT &kp MINUS &kp MINUS &kp DOT>,
-                <&macro_press>;
-        };
-
-        linux_euro: linux_euro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp RALT &kp E &kp EQUAL>;
-        };
-
-        linux_deg: linux_deg {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp RALT &kp O &kp O>;
-        };
-
-        linux_qo: linux_qo {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp RALT &kp LT &kp LT>;
-        };
-
-        linux_qc: linux_qc {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp RALT &kp GT &kp GT>;
-        };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        combo_LBKT {
-            bindings = <&hm LC(LSHFT) LBKT>;
-            key-positions = <17 18>;
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <32 33 34>;
             layers = <0>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
         };
 
-        combo_minus {
-            bindings = <&hm LC(LSHFT) MINUS>;
-            key-positions = <21 22>;
-            layers = <0>;
-            timeout-ms = <20>;
-        };
-
-        combo_elipse {
-            bindings = <&linux_ellipsis>;
-            key-positions = <33 34>;
+        Enter {
+            bindings = <&kp ENTER>;
+            key-positions = <9 10 11>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
             layers = <0>;
         };
 
-        combo_mb4 {
-            bindings = <&mkp MB4>;
-            key-positions = <21 22>;
-            layers = <1>;
-        };
-
-        combo_mb5 {
-            bindings = <&mkp MB5>;
-            key-positions = <23 24>;
-            layers = <1>;
-        };
-
-        combo_winelipse {
-            bindings = <&win_ellipsis>;
-            key-positions = <33 34 32>;
+        open_parantheses {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <18 19>;
+            require-prior-idle-ms = <200>;
             layers = <0>;
+            timeout-ms = <18>;
+        };
+
+        right_paranthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <20 21>;
+            require-prior-idle-ms = <200>;
+            layers = <0>;
+            timeout-ms = <18>;
+        };
+
+        left_bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <29 30>;
+            require-prior-idle-ms = <200>;
+            layers = <0>;
+            timeout-ms = <18>;
+        };
+
+        right_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <31 32>;
+            require-prior-idle-ms = <200>;
+            layers = <0>;
+            timeout-ms = <18>;
+        };
+
+        less_than {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <6 7>;
+            require-prior-idle-ms = <200>;
+            layers = <0>;
+            timeout-ms = <18>;
+        };
+
+        greater_than {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <8 9>;
+            require-prior-idle-ms = <200>;
+            layers = <0>;
+            timeout-ms = <18>;
         };
     };
 
@@ -694,8 +299,8 @@
         alphas {
             bindings = <
                                 &none                                                                                                                                                                                                        &none
-&kp TAB                         &kp Q              &kp W             &kp E             &kp R                   &kp T                                                   &kp Y      &kp U                &kp I              &kp O              &kp P                       &kp SQT
-&ht_hyper LS(LA(LC(LGUI))) ESC  &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LEFT_SHIFT F  &kp G                                                   &kp H      &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SEMICOLON  &kp NON_US_BACKSLASH
+&kp TAB                         &kp Q              &kp W             &kp E             &kp R                   &kp T                                                   &kp Y      &kp U                &kp I              &kp O              &kp P                       &kp MINUS
+&ht_hyper LS(LA(LC(LGUI))) ESC  &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LEFT_SHIFT F  &kp G                                                   &kp H      &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SEMICOLON  &kp SINGLE_QUOTE
                                 &kp Z              &hm RALT X        &kp C             &kp V                   &kp B                                                   &kp N      &kp M                &kp COMMA          &hm RALT PERIOD    &kp SLASH
                                                                                                                &lt 2 TAB  &lt 1 SPC  &lt 1 ESC  &lt 4 DEL  &lt 2 BSPC  &lt 3 RET
             >;
@@ -751,30 +356,6 @@
             label = "Function";
         };
 
-        lang {
-            bindings = <
-       &none                                                                                                                                      &none
-&none  &none          &none        &none      &linux_ostroke  &none                                    &none  &none      &linux_ue     &none      &linux_deg  &none
-&none  &linux_ae      &linux_euro  &linux_sz  &kp LSHFT       &none                                    &none  &kp LSHFT  &linux_eaigu  &linux_ie  &linux_oe   &none
-       &linux_agrave  &none        &none      &none           &none                                    &none  &none      &linux_qo     &linux_qc  &none
-                                                              &none  &linux_dash  &none  &none  &none  &none
-            >;
-
-            label = "Language";
-        };
-
-        win_lang {
-            bindings = <
-       &none                                                                                                                        &none
-&none  &none        &none      &none    &win_ostroke  &none                                  &none  &none      &win_ue     &none    &win_deg  &none
-&none  &win_ae      &win_euro  &win_sz  &kp LSHFT     &none                                  &none  &kp LSHFT  &win_eaigu  &win_ie  &win_oe   &none
-       &win_agrave  &none      &none    &none         &none                                  &none  &none      &win_qo     &win_qc  &none
-                                                      &none  &win_dash  &none  &none  &none  &none
-            >;
-
-            label = "Windows Language";
-        };
-
         LT_MAC {
             bindings = <
         &trans                                                                                                                                                                                                                                &trans
@@ -790,7 +371,7 @@
         &trans                                                                                                                                                                   &trans
 &trans  &kp EXCLAMATION  &kp AT_SIGN     &kp POUND         &kp DOLLAR            &kp PERCENT                                     &kp CARET      &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp SLASH  &kp ASTERISK
 &trans  &kp LS(COMMA)    &kp LS(PERIOD)  &kp LS(N1)        &kp EQUAL             &kp UNDERSCORE                                  &kp AMPERSAND  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp MINUS  &kp PLUS
-        &trans           &trans          &kp SINGLE_QUOTE  &kp LS(SINGLE_QUOTE)  &kp GRAVE                                       &kp ASTERISK   &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp TILDE
+        &kp SLASH        &kp BACKSLASH   &kp SINGLE_QUOTE  &kp LS(SINGLE_QUOTE)  &kp GRAVE                                       &kp ASTERISK   &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp TILDE
                                                                                  &trans          &trans  &trans  &trans  &trans  &kp KP_N0
             >;
         };
