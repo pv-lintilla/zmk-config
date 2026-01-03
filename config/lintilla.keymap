@@ -21,7 +21,7 @@
             bindings = <&bt_sel 0>, <&bt_clr 0>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
+            mods = <(MOD_LSFT)>;
         };
 
         bt_sel_1: bt_select_1 {
@@ -29,7 +29,7 @@
             bindings = <&bt_sel 1>, <&bt_clr 1>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
+            mods = <(MOD_LSFT)>;
         };
 
         bt_sel_2: bt_select_2 {
@@ -37,7 +37,7 @@
             bindings = <&bt_sel 2>, <&bt_clr 2>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
+            mods = <(MOD_LSFT)>;
         };
 
         bt_sel_3: bt_select_3 {
@@ -45,7 +45,7 @@
             bindings = <&bt_sel 3>, <&bt_clr 3>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
+            mods = <(MOD_LSFT)>;
         };
 
         bt_sel_4: bt_select_4 {
@@ -53,7 +53,7 @@
             bindings = <&bt_sel 4>, <&bt_clr 4>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
+            mods = <(MOD_LSFT)>;
         };
 
         out_tog: out_toggle {
@@ -62,14 +62,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        u_caps_word: u_caps_word {
-            compatible = "zmk,behavior-mod-morph";
-            bindings = <&caps_word>, <&kp CAPS>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
         };
 
         win_ae: win_ae {
@@ -625,7 +617,8 @@
                 <&macro_release>,
                 <&kp LSHFT>,
                 <&macro_tap>,
-                <&kp RALT &kp MINUS &kp MINUS &kp DOT>;
+                <&kp RALT &kp MINUS &kp MINUS &kp DOT>,
+                <&macro_press>;
         };
 
         linux_euro: linux_euro {
@@ -679,13 +672,13 @@
         combo_mb4 {
             bindings = <&mkp MB4>;
             key-positions = <21 22>;
-            layers = <2>;
+            layers = <1>;
         };
 
         combo_mb5 {
             bindings = <&mkp MB5>;
             key-positions = <23 24>;
-            layers = <2>;
+            layers = <1>;
         };
 
         combo_winelipse {
@@ -704,22 +697,10 @@
 &kp TAB                         &kp Q              &kp W             &kp E             &kp R                   &kp T                                                   &kp Y      &kp U                &kp I              &kp O              &kp P                       &kp SQT
 &ht_hyper LS(LA(LC(LGUI))) ESC  &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LEFT_SHIFT F  &kp G                                                   &kp H      &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SEMICOLON  &kp NON_US_BACKSLASH
                                 &kp Z              &hm RALT X        &kp C             &kp V                   &kp B                                                   &kp N      &kp M                &kp COMMA          &hm RALT PERIOD    &kp SLASH
-                                                                                                               &lt 3 TAB  &lt 2 SPC  &lt 2 ESC  &lt 5 DEL  &lt 3 BSPC  &lt 4 RET
+                                                                                                               &lt 2 TAB  &lt 1 SPC  &lt 1 ESC  &lt 4 DEL  &lt 2 BSPC  &lt 3 RET
             >;
 
             label = "qwert";
-        };
-
-        nav {
-            bindings = <
-       &none                                                                                                                                  &none
-&none  &none     &none     &none      &none      &none                                   &kp LC(Z)     &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp LC(A)  &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                                   &u_caps_word  &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT  &none
-       &none     &kp RALT  &none      &none      &none                                   &kp INS       &kp HOME     &kp PG_DN    &kp PG_UP    &kp END
-                                                 &none  &none  &none  &kp DEL  &kp BSPC  &kp RET
-            >;
-
-            label = "Navigation";
         };
 
         media {
@@ -827,7 +808,7 @@
         navigation {
             bindings = <
         &trans                                                                                                                                                                     &trans
-&trans  &trans          &trans        &trans           &trans      &trans                                           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans     &trans
+&trans  &bt_sel_0       &bt_sel_1     &bt_sel_2        &bt_sel_3   &bt_sel_4                                        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans     &trans
 &trans  &kp LCTRL       &kp LALT      &kp LGUI         &kp LSHFT   &trans                                           &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &kp ENTER  &trans
         &kp C_PREVIOUS  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT  &trans                                           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
                                                                    &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans  &trans
