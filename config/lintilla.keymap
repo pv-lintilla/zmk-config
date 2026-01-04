@@ -190,21 +190,21 @@
 
         LT_MAC {
             bindings = <
-        &trans                                                                                                                                                                                                                                &trans
-&trans  &kp LA(LS(NUMBER_1))  &kp LA(LS(NUMBER_2))  &kp LA(LS(NUMBER_3))  &kp LA(LS(NUMBER_4))  &kp LA(LS(NUMBER_5))                                  &kp LA(LS(NUMBER_6))  &kp LA(LS(NUMBER_7))  &kp LA(LS(NUMBER_8))  &kp LA(LS(NUMBER_9))  &kp LA(LS(EQUAL))  &trans
-&trans  &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LA(NUMBER_5)                                      &kp LA(NUMBER_6)      &kp LA(NUMBER_7)      &kp LA(NUMBER_8)      &kp LA(NUMBER_9)      &kp LA(EQUAL)      &trans
-        &trans                &trans                &trans                &trans                &trans                                                &trans                &trans                &trans                &trans                &trans
-                                                                                                &trans                &trans  &trans  &trans  &trans  &trans
+           &trans                                                                                                                                                                                                                                &trans
+&trans     &kp LA(LS(NUMBER_1))  &kp LA(LS(NUMBER_2))  &kp LA(LS(NUMBER_3))  &kp LA(LS(NUMBER_4))  &kp LA(LS(NUMBER_5))                                  &kp LA(LS(NUMBER_6))  &kp LA(LS(NUMBER_7))  &kp LA(LS(NUMBER_8))  &kp LA(LS(NUMBER_9))  &kp LA(LS(EQUAL))      &trans
+&kp TILDE  &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LA(NUMBER_5)                                      &kp LA(NUMBER_6)      &kp LA(NUMBER_7)      &kp LA(NUMBER_8)      &kp LA(NUMBER_9)      &kp LA(EQUAL)          &trans
+           &kp EXCLAMATION       &kp AT_SIGN           &kp POUND             &kp DOLLAR            &kp PERCENT                                           &kp CARET             &kp AMPERSAND         &kp ASTERISK          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+                                                                                                   &trans                &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         symbols {
             bindings = <
-        &trans                                                                                                                                                                  &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN     &kp POUND         &kp DOLLAR            &kp PERCENT                                    &kp CARET      &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp SLASH  &kp ASTERISK
-&trans  &kp LS(COMMA)    &kp LS(PERIOD)  &kp LS(N1)        &kp EQUAL             &kp UNDERSCORE                                 &kp AMPERSAND  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp MINUS  &kp PLUS
-        &kp SLASH        &kp BACKSLASH   &kp SINGLE_QUOTE  &kp LS(SINGLE_QUOTE)  &kp GRAVE                                      &kp KP_N0      &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp TILDE
-                                                                                 &trans          &trans  &mo 3  &trans  &trans  &trans
+        &trans                                                                                                                                                                 &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN       &kp POUND         &kp DOLLAR            &kp PERCENT                                 &kp CARET      &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp SLASH  &kp ASTERISK
+&trans  &kp LESS_THAN    &kp GREATER_THAN  &kp EXCLAMATION   &kp EQUAL             &kp EQUAL                                   &kp AMPERSAND  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp MINUS  &kp PLUS
+        &kp SLASH        &kp BACKSLASH     &kp SINGLE_QUOTE  &kp LS(SINGLE_QUOTE)  &kp GRAVE                                   &kp ASTERISK   &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp TILDE
+                                                                                   &trans       &trans  &mo 3  &trans  &trans  &kp KP_N0
             >;
         };
 
@@ -220,11 +220,11 @@
 
         navigation {
             bindings = <
-        &trans                                                                                                                                                                     &trans
-&trans  &bt_sel_0       &bt_sel_1     &bt_sel_2        &bt_sel_3   &bt_sel_4                                        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans     &trans
-&trans  &kp LCTRL       &kp LALT      &kp LGUI         &kp LSHFT   &trans                                           &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &kp ENTER  &trans
-        &kp C_PREVIOUS  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT  &trans                                           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-                                                                   &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans  &trans
+        &trans                                                                                                                                                                         &trans
+&trans  &bt_sel_0         &bt_sel_1       &bt_sel_2     &bt_sel_3     &bt_sel_4                                         &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans     &trans
+&trans  &kp LCTRL         &kp LALT        &kp LGUI      &kp LSHFT     &trans                                            &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &kp ENTER  &trans
+        &kp C_PLAY_PAUSE  &kp C_PREVIOUS  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT                                        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+                                                                      &mkp LCLK   &mkp MCLK  &mkp RCLK  &trans  &trans  &trans
             >;
         };
     };
