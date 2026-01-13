@@ -71,10 +71,11 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <210>;
+            tapping-term-ms = <300>;
             quick-tap-ms = <125>;
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <400>;
             hold-trigger-key-positions = <36 37 38 39 40 41 8 31 8 9 11 12 13 20 21 22 23 24 25 31 32 33 34 35 41 10 1>;
+            flavor = "tap-preferred";
         };
 
         hrm_right: home_row_right {
@@ -82,10 +83,11 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <210>;
+            tapping-term-ms = <300>;
             quick-tap-ms = <125>;
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <400>;
             hold-trigger-key-positions = <39 41 40 0 2 3 4 5 6 7 14 15 16 17 18 19 26 27 28 29 30 36 37 38>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -171,6 +173,20 @@
             layers = <0>;
             timeout-ms = <18>;
         };
+
+        copy {
+            bindings = <&kp LG(C)>;
+            key-positions = <27 28>;
+            require-prior-idle-ms = <200>;
+            layers = <0>;
+        };
+
+        paste {
+            bindings = <&kp LG(V)>;
+            key-positions = <27 29>;
+            require-prior-idle-ms = <200>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -178,10 +194,10 @@
 
         alphas {
             bindings = <
-                                &none                                                                                                                                                                                                     &none
+                                &caps_word                                                                                                                                                                                                &kp ENTER
 &kp TAB                         &kp Q              &kp W             &kp E             &kp R                   &kp T                                                    &kp Y  &kp U                &kp I              &kp O              &kp P                       &kp MINUS
 &ht_hyper LS(LA(LC(LGUI))) ESC  &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LEFT_SHIFT F  &kp G                                                    &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SEMICOLON  &kp SINGLE_QUOTE
-                                &kp Z              &hm RALT X        &kp C             &kp V                   &kp B                                                    &kp N  &kp M                &kp COMMA          &hm RALT PERIOD    &kp SLASH
+                                &kp Z              &kp X             &kp C             &kp V                   &kp B                                                    &kp N  &kp M                &kp COMMA          &hm RALT PERIOD    &kp SLASH
                                                                                                                &mo 1  &kp SPACE  &kp RIGHT_SHIFT  &mo 2  &kp BACKSPACE  &mo 4
             >;
 
