@@ -193,7 +193,7 @@
 &kp TAB                         &kp Q              &kp W             &kp E             &kp R                   &kp T                                                      &kp Y  &kp U                &kp I              &kp O              &kp P                       &kp MINUS
 &ht_hyper LS(LA(LC(LGUI))) ESC  &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LEFT_SHIFT F  &kp G                                                      &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SEMICOLON  &kp SINGLE_QUOTE
                                 &kp Z              &kp X             &kp C             &kp V                   &kp B                                                      &kp N  &kp M                &kp COMMA          &hm RALT PERIOD    &kp SLASH
-                                                                                                               &mo 1  &kp SPACE  &kp RIGHT_SHIFT  &mo 2  &lt 3 BACKSPACE  &mo 4
+                                                                                                               &mo 1  &lt 3 SPACE  &kp RIGHT_SHIFT  &mo 2  &kp BACKSPACE  &mo 4
             >;
 
             label = "qwert";
