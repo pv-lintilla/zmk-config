@@ -91,7 +91,14 @@
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        Function {
+            if-layers = <1 4>;
+            then-layer = <3>;
+        };
+    };
 
     macros {
         bt_sel: bt_select {
