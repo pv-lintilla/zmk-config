@@ -105,6 +105,13 @@
             #binding-cells = <1>;
             bindings = <&macro_param_1to2 &bt BT_SEL MACRO_PLACEHOLDER &bt BT_CLR>;
         };
+
+        print_todo_pv: print_todo_pv {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp FSLH &kp FSLH &kp SPACE &kp LS(T) &kp LS(O) &kp LS(D) &kp LS(O) &kp SPACE &kp LS(P) &kp LS(V) &kp COLON &kp SPACE>;
+            label = "PRINT_TODO_PV";
+        };
     };
 
     combos {
@@ -221,11 +228,11 @@
 
         fn {
             bindings = <
-        &trans                                                                                                           &trans
-&trans  &trans     &trans    &trans    &trans     &trans                                 &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans                                 &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
-        &trans     &trans    &trans    &trans     &trans                                 &trans  &kp F1  &kp F2  &kp F3  &kp F12
-                                                  &trans  &trans  &trans  &mo 3  &trans  &trans
+        &trans                                                                                                                &trans
+&trans  &trans     &trans    &trans    &trans          &trans                                 &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT       &trans                                 &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
+        &trans     &trans    &trans    &print_todo_pv  &trans                                 &trans  &kp F1  &kp F2  &kp F3  &kp F12
+                                                       &trans  &trans  &trans  &mo 3  &trans  &trans
             >;
         };
 
