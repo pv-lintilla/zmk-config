@@ -120,6 +120,31 @@
             bindings = <&none &kp FSLH &kp FSLH &kp SPACE &kp LS(T) &kp LS(O) &kp LS(D) &kp LS(O) &kp SPACE &kp LS(P) &kp LS(V) &kp COLON &kp SPACE>;
             label = "PRINT_TODO_PV";
         };
+
+        constant: constant {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp U &kp B &kp L &kp I &kp C &kp SPACE &kp S &kp T &kp A &kp T &kp I &kp C &kp SPACE &kp F &kp I &kp N &kp A &kp L &kp SPACE>;
+            label = "CONSTANT";
+        };
+
+        lambda: lambda {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp MINUS &kp GT &kp SPACE>;
+            label = "LAMBDA";
+        };
+
+        full_lambda: full_lambda {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LPAR &kp RPAR &kp SPACE &kp MINUS &kp GT &kp SPACE &kp LBRC &kp RBRC>,
+                <&macro_wait_time 30>,
+                <&kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW>;
+
+            label = "FULL_LAMBDA";
+        };
     };
 
     combos {
@@ -189,6 +214,7 @@
         semicolon {
             bindings = <&kp SEMICOLON>;
             key-positions = <33 34>;
+            layers = <0 5>;
         };
 
         undo {
@@ -202,6 +228,18 @@
             key-positions = <21 22 23>;
             layers = <0 1 2 3 4 5>;
         };
+
+        lambda {
+            bindings = <&lambda>;
+            key-positions = <4 5 6>;
+            layers = <0 1 2 3 4 5>;
+        };
+
+        full_lambda {
+            bindings = <&full_lambda>;
+            key-positions = <9 10 11>;
+            layers = <0 1 2 3 4 5>;
+        };
     };
 
     keymap {
@@ -209,7 +247,7 @@
 
         alphas {
             bindings = <
-                                &kp LG(TAB)                                                                                                                                                                                         &kp ENTER
+                                &to 5                                                                                                                                                                                               &kp ENTER
 &kp TAB                         &kp Q              &kp W             &kp E             &kp R                   &kp T                                              &kp Y  &kp U                &kp I              &kp O              &kp P                          &kp UNDERSCORE
 &ht_hyper LS(LA(LC(LGUI))) ESC  &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LEFT_SHIFT F  &kp G                                              &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SINGLE_QUOTE  &kp MINUS
                                 &kp Z              &kp X             &kp C             &kp V                   &kp B                                              &kp N  &kp M                &kp COMMA          &hm RALT PERIOD    &kp SLASH
@@ -224,7 +262,7 @@
         &trans                                                                                                                                                                                                                                 &trans
 &trans  &kp LA(LS(NUMBER_1))  &kp LA(LS(NUMBER_2))  &kp LA(LS(NUMBER_3))  &kp LA(LS(NUMBER_4))  &kp LA(LS(NUMBER_5))                                  &kp LA(LS(NUMBER_6))  &kp LA(LS(NUMBER_7))   &kp LA(LS(NUMBER_8))  &kp LA(LS(NUMBER_9))  &kp LA(LS(EQUAL))  &trans
 &trans  &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LA(NUMBER_5)                                      &kp LA(NUMBER_6)      &kp LA(NUMBER_7)       &kp LA(NUMBER_8)      &kp LA(NUMBER_9)      &kp LA(EQUAL)      &trans
-        &kp LESS_THAN         &kp LEFT_BRACE        &kp LEFT_BRACKET      &kp LEFT_PARENTHESIS  &trans                                                &trans                &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET     &kp RIGHT_BRACE       &kp GREATER_THAN
+        &kp LESS_THAN         &kp LEFT_BRACE        &kp LEFT_BRACKET      &kp LEFT_PARENTHESIS  &print_todo_pv                                        &trans                &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET     &kp RIGHT_BRACE       &kp GREATER_THAN
                                                                                                 &trans                &trans  &trans  &trans  &trans  &trans
             >;
         };
@@ -261,7 +299,7 @@
 
         caps {
             bindings = <
-        &trans                                                                                                                                                                                                                  &trans
+        &constant                                                                                                                                                                                                               &trans
 &trans  &kp LS(Q)              &kp LS(W)             &kp LS(E)             &kp LS(R)               &kp LS(T)                                  &kp LS(Y)  &kp LS(U)                &kp LS(I)              &kp LS(O)              &kp LS(P)                      &trans
 &to 0   &hrm_left LCTRL LS(A)  &hrm_left LALT LS(S)  &hrm_left LGUI LS(D)  &hrm_left LSHIFT LS(F)  &kp LS(G)                                  &kp LS(H)  &hrm_right RSHIFT LS(J)  &hrm_right RGUI LS(K)  &hrm_right RALT LS(L)  &hrm_right RCTRL SINGLE_QUOTE  &trans
         &kp LS(Z)              &kp LS(X)             &kp LS(C)             &kp LS(V)               &kp LS(B)                                  &kp LS(N)  &kp LS(M)                &trans                 &trans                 &trans
