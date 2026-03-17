@@ -125,50 +125,44 @@
     combos {
         compatible = "zmk,combos";
 
-        Enter {
-            bindings = <&kp ENTER>;
-            key-positions = <21 22 23>;
-            layers = <0>;
-        };
-
         open_parantheses {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <18 19>;
-            layers = <0>;
+            layers = <0 5>;
         };
 
         right_paranthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <20 21>;
             require-prior-idle-ms = <0>;
-            layers = <0>;
+            layers = <0 5>;
         };
 
         left_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <29 30>;
             require-prior-idle-ms = <0>;
-            layers = <0>;
+            layers = <0 5>;
         };
 
         right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <31 32>;
             require-prior-idle-ms = <0>;
-            layers = <0>;
+            layers = <0 5>;
         };
 
         less_than {
             bindings = <&kp LESS_THAN>;
             key-positions = <6 7>;
-            layers = <0>;
+            layers = <0 5>;
         };
 
         greater_than {
             bindings = <&kp GREATER_THAN>;
             key-positions = <8 9>;
             require-prior-idle-ms = <0>;
-            layers = <0>;
+            layers = <0 5>;
         };
 
         copy {
@@ -192,15 +186,21 @@
             layers = <0>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <16 17 18>;
-            layers = <0>;
-        };
-
         semicolon {
             bindings = <&kp SEMICOLON>;
             key-positions = <33 34>;
+        };
+
+        undo {
+            bindings = <&kp LG(Z)>;
+            key-positions = <16 17 18>;
+            layers = <0 1 2 3 4 5>;
+        };
+
+        redo {
+            bindings = <&kp LG(LS(Z))>;
+            key-positions = <21 22 23>;
+            layers = <0 1 2 3 4 5>;
         };
     };
 
