@@ -247,11 +247,11 @@
 
         alphas {
             bindings = <
-                                &to 5                                                                                                                                                                                               &kp ENTER
-&kp TAB                         &kp Q              &kp W             &kp E             &kp R                   &kp T                                              &kp Y  &kp U                &kp I              &kp O              &kp P                          &kp UNDERSCORE
-&ht_hyper LS(LA(LC(LGUI))) ESC  &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LEFT_SHIFT F  &kp G                                              &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SINGLE_QUOTE  &kp MINUS
-                                &kp Z              &kp X             &kp C             &kp V                   &kp B                                              &kp N  &kp M                &kp COMMA          &hm RALT PERIOD    &kp SLASH
-                                                                                                               &mo 1  &lt 3 SPACE  &to 5  &mo 2  &lt 4 BACKSPACE  &mo 2
+                                &to 5                                                                                                                                                                                                   &kp ENTER
+&kp TAB                         &kp Q              &kp W             &kp E             &kp R                   &kp T                                                  &kp Y  &kp U                &kp I              &kp O              &kp P                          &kp UNDERSCORE
+&ht_hyper LS(LA(LC(LGUI))) ESC  &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LEFT_SHIFT F  &kp G                                                  &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SINGLE_QUOTE  &kp MINUS
+                                &kp Z              &kp X             &kp C             &kp V                   &kp B                                                  &kp N  &kp M                &kp COMMA          &kp PERIOD         &kp SLASH
+                                                                                                               &mo 1  &lt 3 SPACE  &kp LSHFT  &mo 2  &lt 4 BACKSPACE  &mo 2
             >;
 
             label = "qwert";
@@ -299,11 +299,11 @@
 
         caps {
             bindings = <
-        &constant                                                                                                                                                                                                               &trans
-&trans  &kp LS(Q)              &kp LS(W)             &kp LS(E)             &kp LS(R)               &kp LS(T)                                  &kp LS(Y)  &kp LS(U)                &kp LS(I)              &kp LS(O)              &kp LS(P)                      &trans
-&to 0   &hrm_left LCTRL LS(A)  &hrm_left LALT LS(S)  &hrm_left LGUI LS(D)  &hrm_left LSHIFT LS(F)  &kp LS(G)                                  &kp LS(H)  &hrm_right RSHIFT LS(J)  &hrm_right RGUI LS(K)  &hrm_right RALT LS(L)  &hrm_right RCTRL SINGLE_QUOTE  &trans
-        &kp LS(Z)              &kp LS(X)             &kp LS(C)             &kp LS(V)               &kp LS(B)                                  &kp LS(N)  &kp LS(M)                &trans                 &trans                 &trans
-                                                                                                   &trans     &trans  &trans  &trans  &trans  &trans
+        &constant                                                                                                                                                                                                                       &trans
+&trans  &kp LS(Q)              &kp LS(W)             &kp LS(E)             &kp LS(R)               &kp LS(T)                                          &kp LS(Y)  &kp LS(U)                &kp LS(I)              &kp LS(O)              &kp LS(P)                      &trans
+&to 0   &hrm_left LCTRL LS(A)  &hrm_left LALT LS(S)  &hrm_left LGUI LS(D)  &hrm_left LSHIFT LS(F)  &kp LS(G)                                          &kp LS(H)  &hrm_right RSHIFT LS(J)  &hrm_right RGUI LS(K)  &hrm_right RALT LS(L)  &hrm_right RCTRL SINGLE_QUOTE  &trans
+        &kp LS(Z)              &kp LS(X)             &kp LS(C)             &kp LS(V)               &kp LS(B)                                          &kp LS(N)  &kp LS(M)                &trans                 &trans                 &trans
+                                                                                                   &kp SPACE  &kp UNDERSCORE  &trans  &trans  &trans  &trans
             >;
         };
 
