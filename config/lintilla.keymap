@@ -284,10 +284,10 @@
 
         LT_MAC {
             bindings = <
-        &trans                                                                                                                                                                                                                                 &trans
-&trans  &kp LA(LS(NUMBER_1))  &kp LA(LS(NUMBER_2))  &kp LA(LS(NUMBER_3))  &kp LA(LS(NUMBER_4))  &kp LA(LS(NUMBER_5))                                  &kp LA(LS(NUMBER_6))  &kp LA(LS(NUMBER_7))   &kp LA(LS(NUMBER_8))  &kp LA(LS(NUMBER_9))  &kp LA(LS(EQUAL))  &trans
-&trans  &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LA(NUMBER_5)                                      &kp LA(NUMBER_6)      &kp LA(NUMBER_7)       &kp LA(NUMBER_8)      &kp LA(NUMBER_9)      &kp LA(EQUAL)      &trans
-        &kp LESS_THAN         &kp LEFT_BRACE        &kp LEFT_BRACKET      &kp LEFT_PARENTHESIS  &kp SLASH                                             &kp BACKSLASH         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET     &kp RIGHT_BRACE       &kp GREATER_THAN
+        &trans                                                                                                                                                                                                                                &trans
+&trans  &kp LA(LS(NUMBER_1))  &kp LA(LS(NUMBER_2))  &kp LA(LS(NUMBER_3))  &kp LA(LS(NUMBER_4))  &kp LA(LS(NUMBER_5))                                  &kp LA(LS(NUMBER_6))  &kp LA(LS(NUMBER_7))  &kp LA(LS(NUMBER_8))  &kp LA(LS(NUMBER_9))  &kp LA(LS(EQUAL))   &trans
+&trans  &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LA(NUMBER_5)                                      &kp LA(NUMBER_6)      &kp LA(NUMBER_7)      &kp LA(NUMBER_8)      &kp LA(NUMBER_9)      &kp LA(EQUAL)       &trans
+        &trans                &print_todo_pv        &lambda               &full_lambda          &constant                                             &trans                &full_paranthesis     &full_brackets        &full_braces          &full_greater_less
                                                                                                 &trans                &trans  &trans  &trans  &trans  &trans
             >;
         };
