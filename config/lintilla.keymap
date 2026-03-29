@@ -117,7 +117,7 @@
         print_todo_pv: print_todo_pv {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp FSLH &kp FSLH &kp SPACE &kp LS(T) &kp LS(O) &kp LS(D) &kp LS(O) &kp SPACE &kp LS(P) &kp LS(V) &kp COLON &kp SPACE>;
+            bindings = <&kp FSLH &kp FSLH &kp SPACE &kp LS(T) &kp LS(O) &kp LS(D) &kp LS(O) &kp SPACE &kp LS(P) &kp LS(V) &kp COLON &kp SPACE>;
             label = "PRINT_TODO_PV";
         };
 
@@ -145,70 +145,71 @@
 
             label = "FULL_LAMBDA";
         };
+
+        full_brackets: full_brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LBKT &kp RBKT>,
+                <&macro_wait_time 30>,
+                <&kp LEFT_ARROW>;
+
+            label = "FULL_BRACKETS";
+        };
+
+        full_paranthesis: full_paranthesis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LPAR &kp RPAR>,
+                <&macro_wait_time 30>,
+                <&kp LEFT_ARROW>;
+
+            label = "FULL_PARANTHESIS";
+        };
+
+        full_braces: full_braces {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LBRC &kp RBRC>,
+                <&macro_wait_time 30>,
+                <&kp LEFT_ARROW>;
+
+            label = "FULL_BRACES";
+        };
+
+        full_greater_less: full_greater_less {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp GT>, <&macro_wait_time 30>, <&kp LEFT_ARROW>;
+
+            label = "FULL_GREATER_LESS";
+        };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        open_parantheses {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <18 19>;
-            layers = <0 5>;
-        };
-
-        right_paranthesis {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <20 21>;
-            require-prior-idle-ms = <0>;
-            layers = <0 5>;
-        };
-
-        left_bracket {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <29 30>;
-            require-prior-idle-ms = <0>;
-            layers = <0 5>;
-        };
-
-        right_bracket {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <31 32>;
-            require-prior-idle-ms = <0>;
-            layers = <0 5>;
-        };
-
-        less_than {
-            bindings = <&kp LESS_THAN>;
-            key-positions = <6 7>;
-            layers = <0 5>;
-        };
-
-        greater_than {
-            bindings = <&kp GREATER_THAN>;
-            key-positions = <8 9>;
-            require-prior-idle-ms = <0>;
-            layers = <0 5>;
-        };
-
         copy {
             bindings = <&kp LG(C)>;
             key-positions = <27 28>;
             require-prior-idle-ms = <200>;
-            layers = <0>;
+            layers = <0 5>;
         };
 
         paste {
             bindings = <&kp LG(V)>;
             key-positions = <27 29>;
             require-prior-idle-ms = <200>;
-            layers = <0>;
+            layers = <0 5>;
         };
 
         screenshot {
             bindings = <&kp LG(LA(C))>;
             key-positions = <27 29 28>;
             require-prior-idle-ms = <200>;
-            layers = <0>;
+            layers = <0 5>;
         };
 
         semicolon {
@@ -220,25 +221,49 @@
         undo {
             bindings = <&kp LG(Z)>;
             key-positions = <16 17 18>;
-            layers = <0 1 2 3 4 5>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         redo {
             bindings = <&kp LG(LS(Z))>;
             key-positions = <21 22 23>;
-            layers = <0 1 2 3 4 5>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         lambda {
             bindings = <&lambda>;
             key-positions = <4 5 6>;
-            layers = <0 1 2 3 4 5>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         full_lambda {
             bindings = <&full_lambda>;
             key-positions = <9 10 11>;
-            layers = <0 1 2 3 4 5>;
+            layers = <0 1 2 3 4 5 6>;
+        };
+
+        full_paranthesis {
+            bindings = <&full_paranthesis>;
+            key-positions = <18 21>;
+            layers = <6>;
+        };
+
+        full_brackets {
+            bindings = <&full_brackets>;
+            key-positions = <17 22>;
+            layers = <6>;
+        };
+
+        full_braces {
+            bindings = <&full_braces>;
+            key-positions = <16 23>;
+            layers = <6>;
+        };
+
+        full_lesser_greater {
+            bindings = <&full_greater_less>;
+            key-positions = <15 24>;
+            layers = <6>;
         };
     };
 
@@ -251,7 +276,7 @@
 &kp TAB                         &kp Q              &kp W             &kp E             &kp R                   &kp T                                                  &kp Y  &kp U                &kp I              &kp O              &kp P                          &kp UNDERSCORE
 &ht_hyper LS(LA(LC(LGUI))) ESC  &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LEFT_SHIFT F  &kp G                                                  &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SINGLE_QUOTE  &kp MINUS
                                 &kp Z              &kp X             &kp C             &kp V                   &kp B                                                  &kp N  &kp M                &kp COMMA          &kp PERIOD         &kp SLASH
-                                                                                                               &mo 1  &lt 3 SPACE  &kp LSHFT  &mo 2  &lt 4 BACKSPACE  &mo 2
+                                                                                                               &mo 1  &lt 3 SPACE  &kp LSHFT  &mo 6  &lt 4 BACKSPACE  &mo 2
             >;
 
             label = "qwert";
@@ -262,7 +287,7 @@
         &trans                                                                                                                                                                                                                                 &trans
 &trans  &kp LA(LS(NUMBER_1))  &kp LA(LS(NUMBER_2))  &kp LA(LS(NUMBER_3))  &kp LA(LS(NUMBER_4))  &kp LA(LS(NUMBER_5))                                  &kp LA(LS(NUMBER_6))  &kp LA(LS(NUMBER_7))   &kp LA(LS(NUMBER_8))  &kp LA(LS(NUMBER_9))  &kp LA(LS(EQUAL))  &trans
 &trans  &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LA(NUMBER_5)                                      &kp LA(NUMBER_6)      &kp LA(NUMBER_7)       &kp LA(NUMBER_8)      &kp LA(NUMBER_9)      &kp LA(EQUAL)      &trans
-        &kp LESS_THAN         &kp LEFT_BRACE        &kp LEFT_BRACKET      &kp LEFT_PARENTHESIS  &print_todo_pv                                        &trans                &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET     &kp RIGHT_BRACE       &kp GREATER_THAN
+        &kp LESS_THAN         &kp LEFT_BRACE        &kp LEFT_BRACKET      &kp LEFT_PARENTHESIS  &kp SLASH                                             &kp BACKSLASH         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET     &kp RIGHT_BRACE       &kp GREATER_THAN
                                                                                                 &trans                &trans  &trans  &trans  &trans  &trans
             >;
         };
@@ -283,7 +308,7 @@
 &trans  &trans     &trans    &trans    &trans     &trans                                 &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans
 &trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans                                 &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
         &trans     &trans    &trans    &trans     &trans                                 &trans  &kp F1  &kp F2  &kp F3  &kp F12
-                                                  &trans  &trans  &trans  &trans  &mo 6  &trans
+                                                  &trans  &trans  &trans  &trans  &mo 7  &trans
             >;
         };
 
@@ -304,6 +329,16 @@
 &to 0   &hrm_left LCTRL LS(A)  &hrm_left LALT LS(S)  &hrm_left LGUI LS(D)  &hrm_left LSHIFT LS(F)  &kp LS(G)                                          &kp LS(H)  &hrm_right RSHIFT LS(J)  &hrm_right RGUI LS(K)  &hrm_right RALT LS(L)  &hrm_right RCTRL SINGLE_QUOTE  &trans
         &kp LS(Z)              &kp LS(X)             &kp LS(C)             &kp LS(V)               &kp LS(B)                                          &kp LS(N)  &kp LS(M)                &trans                 &trans                 &trans
                                                                                                    &kp SPACE  &kp UNDERSCORE  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        brackets {
+            bindings = <
+        &trans                                                                                                                                                               &trans
+&trans  &trans         &trans          &trans    &trans                &trans                                    &trans    &trans                 &trans    &trans           &trans            &trans
+&trans  &kp LESS_THAN  &kp LEFT_BRACE  &kp LBKT  &kp LEFT_PARENTHESIS  &kp FSLH                                  &kp BSLH  &kp RIGHT_PARENTHESIS  &kp RBKT  &kp RIGHT_BRACE  &kp GREATER_THAN  &trans
+        &trans         &trans          &trans    &trans                &trans                                    &trans    &trans                 &trans    &trans           &trans
+                                                                       &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
