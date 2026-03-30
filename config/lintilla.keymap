@@ -97,6 +97,15 @@
 
             tapping-term-ms = <135>;
         };
+
+        equals_asterisk: equals_asterisk {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EQUALS_ASTERISK";
+            bindings = <&kp EQUAL>, <&kp ASTERISK>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -186,6 +195,13 @@
 
             label = "FULL_GREATER_LESS";
         };
+
+        javadoc: javadoc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp STAR &kp STAR &kp RET>;
+            label = "JAVADOC";
+        };
     };
 
     combos {
@@ -273,7 +289,7 @@
         alphas {
             bindings = <
                                 &to 5                                                                                                                                                                                                   &kp ENTER
-&kp TAB                         &kp Q              &kp W             &kp E             &kp R                   &kp T                                                  &kp Y  &kp U                &kp I              &kp O              &kp P                          &kp EQUAL
+&kp TAB                         &kp Q              &kp W             &kp E             &kp R                   &kp T                                                  &kp Y  &kp U                &kp I              &kp O              &kp P                          &equals_asterisk
 &ht_hyper LS(LA(LC(LGUI))) ESC  &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LEFT_SHIFT F  &kp G                                                  &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SINGLE_QUOTE  &kp MINUS
                                 &kp Z              &kp X             &kp C             &kp V                   &kp B                                                  &kp N  &kp M                &kp COMMA          &kp PERIOD         &kp SLASH
                                                                                                                &mo 1  &lt 3 SPACE  &kp LSHFT  &mo 2  &lt 4 BACKSPACE  &mo 6
@@ -287,7 +303,7 @@
         &trans                                                                                                                                                                                                                                &trans
 &trans  &kp LA(LS(NUMBER_1))  &kp LA(LS(NUMBER_2))  &kp LA(LS(NUMBER_3))  &kp LA(LS(NUMBER_4))  &kp LA(LS(NUMBER_5))                                  &kp LA(LS(NUMBER_6))  &kp LA(LS(NUMBER_7))  &kp LA(LS(NUMBER_8))  &kp LA(LS(NUMBER_9))  &kp LA(LS(EQUAL))   &trans
 &trans  &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LA(NUMBER_5)                                      &kp LA(NUMBER_6)      &kp LA(NUMBER_7)      &kp LA(NUMBER_8)      &kp LA(NUMBER_9)      &kp LA(EQUAL)       &trans
-        &trans                &print_todo_pv        &lambda               &full_lambda          &constant                                             &trans                &full_paranthesis     &full_brackets        &full_braces          &full_greater_less
+        &trans                &print_todo_pv        &lambda               &full_lambda          &constant                                             &javadoc              &full_paranthesis     &full_brackets        &full_braces          &full_greater_less
                                                                                                 &trans                &trans  &trans  &trans  &trans  &trans
             >;
         };
