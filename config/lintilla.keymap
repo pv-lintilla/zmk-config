@@ -273,10 +273,10 @@
         alphas {
             bindings = <
                                 &to 5                                                                                                                                                                                                   &kp ENTER
-&kp TAB                         &kp Q              &kp W             &kp E             &kp R                   &kp T                                                  &kp Y  &kp U                &kp I              &kp O              &kp P                          &kp UNDERSCORE
+&kp TAB                         &kp Q              &kp W             &kp E             &kp R                   &kp T                                                  &kp Y  &kp U                &kp I              &kp O              &kp P                          &kp EQUAL
 &ht_hyper LS(LA(LC(LGUI))) ESC  &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LEFT_SHIFT F  &kp G                                                  &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SINGLE_QUOTE  &kp MINUS
                                 &kp Z              &kp X             &kp C             &kp V                   &kp B                                                  &kp N  &kp M                &kp COMMA          &kp PERIOD         &kp SLASH
-                                                                                                               &mo 1  &lt 3 SPACE  &kp LSHFT  &mo 6  &lt 4 BACKSPACE  &mo 2
+                                                                                                               &mo 1  &lt 3 SPACE  &kp LSHFT  &mo 2  &lt 4 BACKSPACE  &mo 6
             >;
 
             label = "qwert";
