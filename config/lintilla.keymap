@@ -294,7 +294,7 @@
 &kp TAB                         &kp Q              &kp W             &kp E             &kp R                   &kp T                                            &kp Y  &kp U                &kp I              &kp O              &kp P                          &equals_asterisk
 &ht_hyper LS(LA(LC(LGUI))) ESC  &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LEFT_SHIFT F  &kp G                                            &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SINGLE_QUOTE  &kp MINUS
                                 &kp Z              &kp X             &kp C             &kp V                   &kp B                                            &kp N  &kp M                &kp COMMA          &kp PERIOD         &kp SLASH
-                                                                                                               &mo 1  &kp SPACE  &mo 4  &mo 3  &lt 5 BACKSPACE  &mo 2
+                                                                                                               &mo 1  &kp SPACE  &mo 4  &mo 2  &lt 5 BACKSPACE  &mo 3
             >;
 
             label = "qwert";
@@ -322,10 +322,10 @@
 
         numbers {
             bindings = <
-        &trans                                                                                                                     &trans
-&trans  &trans     &trans    &trans    &trans     &trans                                  &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp SLASH  &kp ASTERISK
-&trans  &kp RCTRL  &kp RALT  &kp LGUI  &kp LSHFT  &trans                                  &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp MINUS  &kp PLUS
-        &trans     &trans    &trans    &trans     &trans                                  &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0
+        &trans                                                                                                                        &trans
+&trans  &trans     &trans    &trans    &trans     &trans                                  &trans     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp SLASH  &kp ASTERISK
+&trans  &kp RCTRL  &kp RALT  &kp LGUI  &kp LSHFT  &trans                                  &kp EQUAL  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp MINUS  &kp PLUS
+        &trans     &trans    &trans    &trans     &trans                                  &trans     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0
                                                   &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
