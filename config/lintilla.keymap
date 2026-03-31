@@ -312,10 +312,10 @@
 
         symbols {
             bindings = <
-           &trans                                                                                                                                                               &trans
-&kp TILDE  &kp EXCLAMATION  &kp AT_SIGN       &kp POUND         &kp DOLLAR         &kp PERCENT                                  &kp CARET      &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp SLASH  &kp ASTERISK
-&trans     &kp LESS_THAN    &kp GREATER_THAN  &kp EXCLAMATION   &kp EQUAL          &kp PIPE                                     &kp AMPERSAND  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp MINUS  &kp PLUS
-           &kp SLASH        &kp BACKSLASH     &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp GRAVE                                    &kp ASTERISK   &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0
+           &trans                                                                                                                                                                                          &trans
+&kp TILDE  &kp EXCLAMATION  &kp AT_SIGN       &kp POUND         &kp DOLLAR         &kp PERCENT                                  &kp CARET      &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans         &trans            &trans
+&trans     &kp LESS_THAN    &kp GREATER_THAN  &kp EXCLAMATION   &kp EQUAL          &kp PIPE                                     &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN  &trans
+           &trans           &trans            &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp GRAVE                                    &kp ASTERISK   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SLASH      &kp BACKSLASH
                                                                                    &trans       &trans  &trans  &trans  &trans  &trans
             >;
         };
@@ -367,6 +367,16 @@
 &trans  &trans        &trans        &trans        &trans        &trans                                        &trans  &trans  &trans  &trans  &trans      &trans
         &trans        &trans        &trans        &trans        &trans                                        &trans  &trans  &trans  &trans  &trans
                                                                 &trans        &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+           &trans                                                                                                                                                               &trans
+&kp TILDE  &kp EXCLAMATION  &kp AT_SIGN       &kp POUND         &kp DOLLAR         &kp PERCENT                                  &kp CARET      &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp SLASH  &kp ASTERISK
+&trans     &kp LESS_THAN    &kp GREATER_THAN  &kp EXCLAMATION   &kp EQUAL          &kp PIPE                                     &kp AMPERSAND  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp MINUS  &kp PLUS
+           &kp SLASH        &kp BACKSLASH     &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp GRAVE                                    &kp ASTERISK   &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0
+                                                                                   &trans       &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
