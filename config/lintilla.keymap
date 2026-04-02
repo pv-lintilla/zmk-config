@@ -259,26 +259,6 @@
             key-positions = <9 10 11>;
             layers = <0 2 4 5 6>;
         };
-
-        full_paranthesis {
-            bindings = <&full_paranthesis>;
-            key-positions = <21 22>;
-        };
-
-        full_brackets {
-            bindings = <&full_brackets>;
-            key-positions = <32 33>;
-        };
-
-        full_braces {
-            bindings = <&full_braces>;
-            key-positions = <9 10>;
-        };
-
-        full_lesser_greater {
-            bindings = <&full_greater_less>;
-            key-positions = <24 23>;
-        };
     };
 
     keymap {
