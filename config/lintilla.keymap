@@ -204,6 +204,13 @@
             bindings = <&kp FSLH &kp STAR &kp STAR &kp RET>;
             label = "JAVADOC";
         };
+
+        space_to_0: space_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &to 0>;
+            label = "SPACE_TO_0";
+        };
     };
 
     combos {
@@ -249,14 +256,8 @@
         };
 
         lambda {
-            bindings = <&lambda>;
+            bindings = <&to 6>;
             key-positions = <4 5 6>;
-            layers = <0 2 4 5 6>;
-        };
-
-        full_lambda {
-            bindings = <&full_lambda>;
-            key-positions = <9 10 11>;
             layers = <0 2 4 5 6>;
         };
     };
@@ -328,11 +329,11 @@
 
         caps {
             bindings = <
-        &constant                                                                                                                                                                                                                       &trans
-&trans  &kp LS(Q)              &kp LS(W)             &kp LS(E)             &kp LS(R)               &kp LS(T)                                          &kp LS(Y)  &kp LS(U)                &kp LS(I)              &kp LS(O)              &kp LS(P)                      &trans
-&to 0   &hrm_left LCTRL LS(A)  &hrm_left LALT LS(S)  &hrm_left LGUI LS(D)  &hrm_left LSHIFT LS(F)  &kp LS(G)                                          &kp LS(H)  &hrm_right RSHIFT LS(J)  &hrm_right RGUI LS(K)  &hrm_right RALT LS(L)  &hrm_right RCTRL SINGLE_QUOTE  &trans
-        &kp LS(Z)              &kp LS(X)             &kp LS(C)             &kp LS(V)               &kp LS(B)                                          &kp LS(N)  &kp LS(M)                &trans                 &trans                 &trans
-                                                                                                   &kp SPACE  &kp UNDERSCORE  &trans  &trans  &trans  &trans
+        &constant                                                                                                                                                                                                                            &trans
+&trans  &kp LS(Q)              &kp LS(W)             &kp LS(E)             &kp LS(R)               &kp LS(T)                                               &kp LS(Y)  &kp LS(U)                &kp LS(I)              &kp LS(O)              &kp LS(P)                      &trans
+&to 0   &hrm_left LCTRL LS(A)  &hrm_left LALT LS(S)  &hrm_left LGUI LS(D)  &hrm_left LSHIFT LS(F)  &kp LS(G)                                               &kp LS(H)  &hrm_right RSHIFT LS(J)  &hrm_right RGUI LS(K)  &hrm_right RALT LS(L)  &hrm_right RCTRL SINGLE_QUOTE  &trans
+        &kp LS(Z)              &kp LS(X)             &kp LS(C)             &kp LS(V)               &kp LS(B)                                               &kp LS(N)  &kp LS(M)                &trans                 &trans                 &trans
+                                                                                                   &kp UNDERSCORE  &kp SPACE  &space_to_0  &trans  &trans  &trans
             >;
         };
 
