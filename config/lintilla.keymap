@@ -369,6 +369,16 @@
                                                                 &trans        &trans  &trans  &trans  &trans  &trans
             >;
         };
+
+        layer_8 {
+            bindings = <
+           &trans                                                                                                                                                                &trans
+&kp TILDE  &kp PERCENT    &kp AT_SIGN    &kp POUND        &kp DOLLAR        &kp LEFT_BRACE                                        &kp RIGHT_BRACE        &trans  &trans  &trans  &trans  &trans
+&kp CARET  &kp AMPERSAND  &kp PIPE       &kp EXCLAMATION  &kp EQUAL         &kp LEFT_PARENTHESIS                                  &kp RIGHT_PARENTHESIS  &trans  &trans  &trans  &trans  &trans
+           &kp SLASH      &kp BACKSLASH  &kp LESS_THAN    &kp GREATER_THAN  &kp LEFT_BRACKET                                      &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans
+                                                                            &trans                &trans  &trans  &trans  &trans  &trans
+            >;
+        };
     };
 };
 
