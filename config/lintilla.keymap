@@ -279,10 +279,10 @@
 
         symbols {
             bindings = <
-           &trans                                                                                                                                                                                                     &trans
-&kp TILDE  &kp PERCENT    &kp AT_SIGN    &kp POUND        &kp DOLLAR        &kp LEFT_BRACE                                                           &kp RIGHT_BRACE        &lambda             &full_lambda  &trans  &trans  &trans
-&kp CARET  &kp AMPERSAND  &kp PIPE       &kp EXCLAMATION  &kp EQUAL         &kp LEFT_PARENTHESIS                                                     &kp RIGHT_PARENTHESIS  &print_todo_pv      &javadoc      &trans  &trans  &trans
-           &kp SLASH      &kp BACKSLASH  &kp LESS_THAN    &kp GREATER_THAN  &kp LEFT_BRACKET                                                         &kp RIGHT_BRACKET      &full_greater_less  &trans        &trans  &trans
+           &trans                                                                                                                                                                                                        &trans
+&kp TILDE  &kp PERCENT    &kp AT_SIGN    &kp POUND        &kp DOLLAR        &kp LEFT_BRACE                                                           &kp RIGHT_BRACE        &lambda             &full_lambda  &trans     &trans  &trans
+&kp CARET  &kp AMPERSAND  &kp PIPE       &kp EXCLAMATION  &kp EQUAL         &kp LEFT_PARENTHESIS                                                     &kp RIGHT_PARENTHESIS  &print_todo_pv      &javadoc      &constant  &trans  &trans
+           &kp SLASH      &kp BACKSLASH  &kp LESS_THAN    &kp GREATER_THAN  &kp LEFT_BRACKET                                                         &kp RIGHT_BRACKET      &full_greater_less  &trans        &trans     &trans
                                                                             &to 6                 &trans  &trans  &full_paranthesis  &full_brackets  &full_braces
             >;
         };
@@ -290,9 +290,9 @@
         LT_MAC {
             bindings = <
         &trans                                                                                                                                                                                                                                &trans
-&trans  &kp LA(LS(NUMBER_1))  &kp LA(LS(NUMBER_2))  &kp LA(LS(NUMBER_3))  &kp LA(LS(NUMBER_4))  &kp LA(LS(NUMBER_5))                                  &kp LA(LS(NUMBER_6))  &kp LA(LS(NUMBER_7))  &kp LA(LS(NUMBER_8))  &kp LA(LS(NUMBER_9))  &kp LA(LS(EQUAL))   &trans
-&trans  &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LA(NUMBER_5)                                      &kp LA(NUMBER_6)      &kp LA(NUMBER_7)      &kp LA(NUMBER_8)      &kp LA(NUMBER_9)      &kp LA(EQUAL)       &trans
-        &trans                &print_todo_pv        &lambda               &full_lambda          &constant                                             &javadoc              &full_paranthesis     &full_brackets        &full_braces          &full_greater_less
+&trans  &kp LA(LS(NUMBER_1))  &kp LA(LS(NUMBER_2))  &kp LA(LS(NUMBER_3))  &kp LA(LS(NUMBER_4))  &kp LA(LS(NUMBER_5))                                  &kp LA(LS(NUMBER_6))  &kp LA(LS(NUMBER_7))  &kp LA(LS(NUMBER_8))  &kp LA(LS(NUMBER_9))  &kp LA(LS(EQUAL))  &trans
+&trans  &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LA(NUMBER_5)                                      &kp LA(NUMBER_6)      &kp LA(NUMBER_7)      &kp LA(NUMBER_8)      &kp LA(NUMBER_9)      &kp LA(EQUAL)      &trans
+        &trans                &trans                &trans                &trans                &trans                                                &trans                &trans                &trans                &trans                &trans
                                                                                                 &trans                &trans  &trans  &trans  &trans  &trans
             >;
         };
