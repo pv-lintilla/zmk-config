@@ -278,10 +278,10 @@
 
         symbols {
             bindings = <
-           &trans                                                                                                                                                                                   &trans
-&kp TILDE  &kp PERCENT    &kp AT_SIGN    &kp POUND        &kp DOLLAR        &kp LEFT_BRACE                                                           &kp RIGHT_BRACE        &trans  &trans  &trans  &trans  &trans
-&kp CARET  &kp AMPERSAND  &kp PIPE       &kp EXCLAMATION  &kp EQUAL         &kp LEFT_PARENTHESIS                                                     &kp RIGHT_PARENTHESIS  &trans  &trans  &trans  &trans  &trans
-           &kp SLASH      &kp BACKSLASH  &kp LESS_THAN    &kp GREATER_THAN  &kp LEFT_BRACKET                                                         &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans
+           &trans                                                                                                                                                                                                     &trans
+&kp TILDE  &kp PERCENT    &kp AT_SIGN    &kp POUND        &kp DOLLAR        &kp LEFT_BRACE                                                           &kp RIGHT_BRACE        &lambda             &full_lambda  &trans  &trans  &trans
+&kp CARET  &kp AMPERSAND  &kp PIPE       &kp EXCLAMATION  &kp EQUAL         &kp LEFT_PARENTHESIS                                                     &kp RIGHT_PARENTHESIS  &print_todo_pv      &javadoc      &trans  &trans  &trans
+           &kp SLASH      &kp BACKSLASH  &kp LESS_THAN    &kp GREATER_THAN  &kp LEFT_BRACKET                                                         &kp RIGHT_BRACKET      &full_greater_less  &trans        &trans  &trans
                                                                             &to 6                 &trans  &trans  &full_paranthesis  &full_brackets  &full_braces
             >;
         };
@@ -312,7 +312,7 @@
 &trans  &trans     &trans    &trans    &trans     &trans                                 &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans
 &trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans                                 &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
         &trans     &trans    &trans    &trans     &trans                                 &trans  &kp F1  &kp F2  &kp F3  &kp F12
-                                                  &trans  &trans  &trans  &trans  &mo 7  &trans
+                                                  &trans  &trans  &mo 7  &trans  &trans  &trans
             >;
         };
 
