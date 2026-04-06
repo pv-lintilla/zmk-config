@@ -126,6 +126,14 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        mmv_hold: mmv_hold {
+            compatible = "zmk,behavior-sticky-key";
+            label = "MMV_HOLD";
+            bindings = <&mmv>;
+            #binding-cells = <1>;
+            release-after-ms = <1000>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -228,6 +236,18 @@
             #binding-cells = <0>;
             bindings = <&kp SPACE &to 0>;
             label = "SPACE_TO_0";
+        };
+
+        move_it: move_it {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&mmv_hold MOVE_RIGHT>,
+                <&macro_wait_time 30>,
+                <&mmv_hold MOVE_LEFT>,
+                <&macro_wait_time 30>;
+
+            label = "MOVE_IT";
         };
     };
 
@@ -337,7 +357,7 @@
 
         navigation {
             bindings = <
-        &trans                                                                                                                                                                           &trans
+        &trans                                                                                                                                                                           &move_it
 &trans  &trans            &trans          &kp LG(MINUS)  &kp LG(EQUAL)  &trans                                            &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans     &trans
 &trans  &kp LCTRL         &kp LALT        &kp LGUI       &kp LSHFT      &trans                                            &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &kp ENTER  &trans
         &kp C_PLAY_PAUSE  &kp C_PREVIOUS  &kp C_VOL_DN   &kp C_VOL_UP   &kp C_NEXT                                        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
