@@ -321,7 +321,7 @@
 &kp TILDE  &kp PERCENT                &kp AT_SIGN          &kp POUND            &kp DOLLAR             &kp LEFT_BRACE                                                           &kp RIGHT_BRACE        &kp KP_N7        &kp KP_N8        &kp KP_N9        &kp KP_DIVIDE  &kp KP_MULTIPLY
 &kp CARET  &hrm_left LCTRL AMPERSAND  &hrm_left LALT PIPE  &hrm_left LGUI EXCL  &hrm_left LSHFT EQUAL  &kp LEFT_PARENTHESIS                                                     &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS    &kp KP_MINUS
            &kp SLASH                  &kp BACKSLASH        &kp LESS_THAN        &kp GREATER_THAN       &kp LEFT_BRACKET                                                         &kp RIGHT_BRACKET      &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp KP_N0
-                                                                                                       &to 5                 &trans  &trans  &full_paranthesis  &full_brackets  &full_braces
+                                                                                                       &full_braces          &full_brackets  &full_paranthesis  &trans  &trans  &to 5
             >;
         };
 
