@@ -256,6 +256,17 @@
             bindings = <&kt LGUI &to 0>;
             label = "END_APP_SWITCH";
         };
+
+        sql_like: sql_like {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp SPACE &kp L &kp I &kp K &kp E &kp SPACE &kp SQT &kp PRCNT &kp PRCNT &kp SQT>,
+                <&macro_wait_time 30>,
+                <&kp LEFT_ARROW &kp LEFT_ARROW>;
+
+            label = "SQL_LIKE";
+        };
     };
 
     combos {
@@ -337,7 +348,7 @@
         &trans                                                                                                                                                                                                                                &trans
 &trans  &kp LA(LS(NUMBER_1))  &kp LA(LS(NUMBER_2))  &kp LA(LS(NUMBER_3))  &kp LA(LS(NUMBER_4))  &kp LA(LS(NUMBER_5))                                  &kp LA(LS(NUMBER_6))  &kp LA(LS(NUMBER_7))  &kp LA(LS(NUMBER_8))  &kp LA(LS(NUMBER_9))  &kp LA(LS(EQUAL))  &trans
 &trans  &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LA(NUMBER_5)                                      &kp LA(NUMBER_6)      &kp LA(NUMBER_7)      &kp LA(NUMBER_8)      &kp LA(NUMBER_9)      &kp LA(EQUAL)      &trans
-        &trans                &trans                &javadoc              &print_todo_pv        &trans                                                &trans                &lambda               &full_lambda          &trans                &trans
+        &trans                &trans                &javadoc              &print_todo_pv        &trans                                                &trans                &lambda               &full_lambda          &sql_like             &trans
                                                                                                 &trans                &trans  &trans  &trans  &trans  &trans
             >;
         };
