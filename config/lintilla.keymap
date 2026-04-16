@@ -325,7 +325,7 @@
         symbols {
             bindings = <
            &trans                                                                                                                                                                                                                 &trans
-&kp TILDE  &kp PERCENT                &kp AT_SIGN          &kp POUND            &kp DOLLAR             &kp LEFT_BRACE                                                              &kp RIGHT_BRACE        &kp F7  &kp F8  &kp F9  &kp F10  &kp LA(F8)
+&kp GRAVE  &kp TILDE                  &kp PERCENT          &kp POUND            &kp DOLLAR             &kp LEFT_BRACE                                                              &kp RIGHT_BRACE        &kp F7  &kp F8  &kp F9  &kp F10  &kp LA(F8)
 &kp CARET  &hrm_left LCTRL AMPERSAND  &hrm_left LALT PIPE  &hrm_left LGUI EXCL  &hrm_left LSHFT EQUAL  &kp LEFT_PARENTHESIS                                                        &kp RIGHT_PARENTHESIS  &kp F4  &kp F5  &kp F6  &kp F11  &kp LS(F6)
            &kp SLASH                  &kp BACKSLASH        &kp LESS_THAN        &kp GREATER_THAN       &kp LEFT_BRACKET                                                            &kp RIGHT_BRACKET      &kp F1  &kp F2  &kp F3  &kp F12
                                                                                                        &kp LALT              &kp LSHFT  &trans  &full_paranthesis  &full_brackets  &full_braces
