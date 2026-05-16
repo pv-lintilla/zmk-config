@@ -275,46 +275,61 @@
         copy {
             bindings = <&kp LG(C)>;
             key-positions = <27 28>;
-            require-prior-idle-ms = <200>;
-            layers = <0 5>;
+            layers = <0 5 8>;
         };
 
         paste {
             bindings = <&kp LG(V)>;
             key-positions = <27 29>;
-            require-prior-idle-ms = <200>;
-            layers = <0 5>;
+            layers = <0 5 8>;
         };
 
         screenshot {
             bindings = <&kp LG(LA(C))>;
             key-positions = <27 29 28>;
-            require-prior-idle-ms = <200>;
-            layers = <0 5>;
+            layers = <0 5 8>;
         };
 
         semicolon {
             bindings = <&kp SEMICOLON>;
             key-positions = <33 34>;
-            layers = <0 5>;
+            layers = <0 5 8>;
         };
 
         undo {
             bindings = <&kp LG(Z)>;
-            key-positions = <16 17 18>;
-            layers = <0 2 3 4 5>;
+            key-positions = <18 19>;
+            layers = <0 2 3 4 5 8 1 6 7>;
         };
 
         redo {
             bindings = <&kp LG(LS(Z))>;
-            key-positions = <21 22 23>;
-            layers = <0 2 3 4 5>;
+            key-positions = <21 20>;
+            layers = <0 5 8 1 2 3 4 6 7>;
         };
 
-        lambda {
+        to_caps {
             bindings = <&to 5>;
             key-positions = <4 5 6>;
-            layers = <0 2 3 4 5>;
+            layers = <0 5 8>;
+        };
+
+        to_case_styles {
+            bindings = <&to 8>;
+            key-positions = <9 10 11>;
+            layers = <0 5 8>;
+        };
+
+        vol_up {
+            bindings = <&kp C_VOLUME_UP>;
+            key-positions = <6 7>;
+            layers = <0 5 8>;
+        };
+
+        vol_down {
+            bindings = <&kp C_VOLUME_DOWN>;
+            key-positions = <29 30>;
+            layers = <0 5 8>;
         };
     };
 
@@ -323,11 +338,11 @@
 
         alphas {
             bindings = <
-                                &td_app_switch                                                                                                                                                                                  &kp ENTER
-&kp TAB                         &kp Q              &kp W             &kp E             &kp R                   &kp T                                          &kp Y  &kp U                &kp I              &kp O              &kp P                          &equals_asterisk
-&ht_hyper LS(LA(LC(LGUI))) ESC  &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LEFT_SHIFT F  &kp G                                          &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SINGLE_QUOTE  &kp MINUS
-                                &kp Z              &kp X             &kp C             &kp V                   &kp B                                          &kp N  &kp M                &coma_excl         &period_at         &kp SLASH
-                                                                                                               &mo 2  &kp SPACE  &mo 1  &mo 4  &kp BACKSPACE  &mo 7
+                                &td_app_switch                                                                                                                                                                                        &kp ENTER
+&kp TAB                         &kp Q              &kp W             &kp E             &kp R                   &kp T                                                &kp Y  &kp U                &kp I              &kp O              &kp P                          &equals_asterisk
+&ht_hyper LS(LA(LC(LGUI))) ESC  &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LEFT_SHIFT F  &kp G                                                &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SINGLE_QUOTE  &kp MINUS
+                                &kp Z              &kp X             &kp C             &kp V                   &kp B                                                &kp N  &kp M                &coma_excl         &period_at         &kp SLASH
+                                                                                                               &mo 2  &kp SPACE  &mo 1  &lt 4 LSHFT  &kp BACKSPACE  &mo 7
             >;
 
             label = "qwert";
@@ -375,7 +390,7 @@
 
         caps {
             bindings = <
-        &constant                                                                                                                                                                                                                            &trans
+        &to 0                                                                                                                                                                                                                                &trans
 &trans  &kp LS(Q)              &kp LS(W)             &kp LS(E)             &kp LS(R)               &kp LS(T)                                               &kp LS(Y)  &kp LS(U)                &kp LS(I)              &kp LS(O)              &kp LS(P)                      &trans
 &to 0   &hrm_left LCTRL LS(A)  &hrm_left LALT LS(S)  &hrm_left LGUI LS(D)  &hrm_left LSHIFT LS(F)  &kp LS(G)                                               &kp LS(H)  &hrm_right RSHIFT LS(J)  &hrm_right RGUI LS(K)  &hrm_right RALT LS(L)  &hrm_right RCTRL SINGLE_QUOTE  &trans
         &kp LS(Z)              &kp LS(X)             &kp LS(C)             &kp LS(V)               &kp LS(B)                                               &kp LS(N)  &kp LS(M)                &trans                 &trans                 &trans
@@ -400,6 +415,17 @@
 &trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans                                  &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS   &kp KP_PLUS
         &trans     &trans    &trans    &trans     &trans                                  &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0
                                                   &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        case_styles {
+            label = "case_styles";
+            bindings = <
+        &trans                                                                                                                                                                                                  &kp ENTER
+&trans  &kp Q              &kp W             &kp E             &kp R                   &kp T                                                 &kp Y   &kp U                &kp I              &kp O              &kp P                          &equals_asterisk
+&to 0   &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LEFT_SHIFT F  &kp G                                                 &kp H   &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SINGLE_QUOTE  &kp MINUS
+        &kp Z              &kp X             &kp C             &kp V                   &kp B                                                 &kp N   &kp M                &coma_excl         &period_at         &kp SLASH
+                                                                                       &kp UNDERSCORE  &kp SPACE  &sk LSHFT  &trans  &trans  &trans
             >;
         };
     };
