@@ -334,6 +334,18 @@
             key-positions = <29 30>;
             layers = <0 5>;
         };
+
+        zoom_in {
+            bindings = <&kp LG(EQUAL)>;
+            key-positions = <8 9>;
+            layers = <0 5>;
+        };
+
+        zoom_out {
+            bindings = <&kp LG(MINUS)>;
+            key-positions = <31 32>;
+            layers = <0 5>;
+        };
     };
 
     keymap {
