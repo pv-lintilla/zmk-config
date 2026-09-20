@@ -7,15 +7,6 @@
 
 / {
     behaviors {
-        hm: homerow_mod {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-
         bt_sel_0: bt_select_0 {
             compatible = "zmk,behavior-mod-morph";
             bindings = <&bt_sel 0>, <&bt_clr 0>;
@@ -118,6 +109,42 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
+        };
+
+        mm_app_switch: mm_app_switch {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_APP_SWITCH";
+            bindings = <&none>, <&kp LEFT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mm_symbols: mm_symbols {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_SYMBOLS";
+            bindings = <&mo 1>, <&kp RIGHT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
+
+        mm_backspace: mm_backspace {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_BACKSPACE";
+            bindings = <&kp BACKSPACE>, <&kp RIGHT_PARENTHESIS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
+
+        mm_navigation: mm_navigation {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_NAVIGATION";
+            bindings = <&mo 5>, <&kp RIGHT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
     };
 
