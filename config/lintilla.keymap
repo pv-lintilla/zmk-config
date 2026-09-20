@@ -235,7 +235,7 @@
         start_app_switch: enter_app_switch_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LGUI &kp TAB &to 4>;
+            bindings = <&kt LGUI &kp TAB &to 5>;
             label = "ENTER_APP_SWITCH_WINDOW";
         };
 
@@ -254,45 +254,45 @@
             bindings = <&kp LG(C)>;
             key-positions = <27 28>;
             require-prior-idle-ms = <200>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
 
         paste {
             bindings = <&kp LG(V)>;
             key-positions = <27 29>;
             require-prior-idle-ms = <200>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
 
         screenshot {
             bindings = <&kp LG(LA(C))>;
             key-positions = <27 29 28>;
             require-prior-idle-ms = <200>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
 
         semicolon {
             bindings = <&kp SEMICOLON>;
             key-positions = <33 34>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
 
         undo {
             bindings = <&kp LG(Z)>;
             key-positions = <16 17 18>;
-            layers = <0 2 3 4 5>;
+            layers = <0 3 4 5 6>;
         };
 
         redo {
             bindings = <&kp LG(LS(Z))>;
             key-positions = <21 22 23>;
-            layers = <0 2 3 4 5>;
+            layers = <0 3 4 5 6>;
         };
 
         lambda {
-            bindings = <&to 5>;
+            bindings = <&to 6>;
             key-positions = <4 5 6>;
-            layers = <0 2 3 4 5>;
+            layers = <0 3 4 5 6>;
         };
     };
 
@@ -305,7 +305,7 @@
 &ht_hyper LS(LA(LC(LGUI))) ESC  &kp Q              &kp W             &kp E             &kp R                   &kp T                                                &kp Y  &kp U                &kp I              &kp O              &kp P                          &kp MINUS
 &kp LSHFT                       &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LEFT_SHIFT F  &kp G                                                &kp H  &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SINGLE_QUOTE  &sft_semicolon RSHFT SEMI
                                 &kp Z              &kp X             &kp C             &kp V                   &kp B                                                &kp N  &kp M                &coma_excl         &period_at         &kp SLASH
-                                                                                                               &mo 2  &kp SPACE  &mo 1  &lt 4 LSHFT  &kp BACKSPACE  &mo 3
+                                                                                                               &mo 3  &kp SPACE  &mo 1  &lt 5 LSHFT  &kp BACKSPACE  &mo 4
             >;
 
             label = "qwert";
@@ -318,6 +318,16 @@
 &kp CARET  &hrm_left LCTRL AMPERSAND  &hrm_left LALT PIPE  &hrm_left LGUI EXCL  &hrm_left LSHFT EQUAL  &kp LEFT_PARENTHESIS                                                        &kp RIGHT_PARENTHESIS  &kp F4  &kp F5  &kp F6  &kp F11  &kp LS(F6)
            &kp SLASH                  &kp BACKSLASH        &kp LESS_THAN        &kp GREATER_THAN       &kp LEFT_BRACKET                                                            &kp RIGHT_BRACKET      &kp F1  &kp F2  &kp F3  &kp F12
                                                                                                        &kp LALT              &kp LSHFT  &trans  &full_paranthesis  &full_brackets  &full_braces
+            >;
+        };
+
+        fn {
+            bindings = <
+       &none                                                                                                        &none
+&none  &none      &none     &none     &none      &none                               &none  &kp F7  &kp F8  &kp F9  &kp F10  &none
+&none  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &none                               &none  &kp F4  &kp F5  &kp F6  &kp F11  &none
+       &none      &none     &none     &none      &none                               &none  &kp F1  &kp F2  &kp F3  &kp F12
+                                                 &none  &trans  &none  &none  &none  &none
             >;
         };
 
@@ -337,7 +347,7 @@
 &trans  &trans     &trans    &trans    &trans     &trans                                  &trans        &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_DIVIDE  &kp KP_MULTIPLY
 &trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans                                  &kp KP_EQUAL  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS   &kp KP_PLUS
         &trans     &trans    &trans    &trans     &trans                                  &kp KP_DOT    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0
-                                                  &mo 6   &trans  &trans  &trans  &trans  &trans
+                                                  &mo 7   &trans  &trans  &trans  &trans  &trans
             >;
         };
 
