@@ -146,6 +146,13 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
         };
+
+        td_app_switch: td_app_switch {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_APP_SWITCH";
+            #binding-cells = <0>;
+            bindings = <&kp LG(TAB)>, <&start_app_switch>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
