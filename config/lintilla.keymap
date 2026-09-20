@@ -316,7 +316,7 @@
            &trans                                                                                                                                            &trans
 &kp GRAVE  &kp TILDE  &kp AT         &kp POUND        &kp DOLLAR  &kp PERCENT                                   &kp CARET   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_DIVIDE  &kp LA(KP_MULTIPLY)
 &trans     &kp SLASH  &kp BACKSLASH  &kp EXCLAMATION  &kp EQUAL   &kp ASTERISK                                  &trans      &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS   &kp LS(KP_PLUS)
-           &trans     &trans         &kp AMPERSAND    &kp PIPE    &trans                                        &kp KP_DOT  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0
+           &kp MINUS  &kp PLUS       &kp AMPERSAND    &kp PIPE    &kp PLUS                                      &kp KP_DOT  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0
                                                                   &trans        &trans  &trans  &trans  &trans  &trans
             >;
         };
