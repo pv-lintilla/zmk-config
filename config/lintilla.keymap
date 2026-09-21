@@ -83,14 +83,14 @@
             hold-trigger-on-release;
         };
 
-        sft_semicolon: sft_semicolon {
+        ht_shift: ht_shift {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
-            label = "SFT_SEMICOLON";
+            label = "HT_SHIFT";
         };
 
         mm_ltmac: mm_ltmac {
@@ -337,9 +337,9 @@
 
         alphas_mac {
             bindings = <
-                                &kp TAB                                                                                                                                                                                                                     &kp ENTER
-&ht_hyper LS(LA(LC(LGUI))) ESC  &kp Q              &kp W             &kp E             &kp R                   &kp T                                                             &kp Y           &kp U                &kp I              &kp O              &kp P                       &kp MINUS
-&kp LSHFT                       &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LEFT_SHIFT F  &kp G                                                             &kp H           &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SEMICOLON  &sft_semicolon RSHFT SINGLE_QUOTE
+                                &kp ESCAPE                                                                                                                                                                                                                  &kp ENTER
+&ht_hyper LS(LA(LC(LGUI))) TAB  &kp Q              &kp W             &kp E             &kp R                   &kp T                                                             &kp Y           &kp U                &kp I              &kp O              &kp P                       &kp MINUS
+&ht_shift LSHFT ESCAPE          &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LEFT_SHIFT F  &kp G                                                             &kp H           &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SEMICOLON  &ht_shift RSHFT SINGLE_QUOTE
                                 &kp Z              &kp X             &kp C             &kp V                   &kp B                                                             &kp N           &kp M                &kp COMMA          &kp PERIOD         &kp SLASH
                                                                                                                &mm_ltmac  &mm_space  &mm_app_switch  &mm_symbols  &mm_backspace  &mm_navigation
             >;
