@@ -338,8 +338,8 @@
         alphas_mac {
             bindings = <
                                 &kp TAB                                                                                                                                                                                                                     &kp ENTER
-&ht_hyper LS(LA(LC(LGUI))) ESC  &kp Q              &kp W             &kp E             &kp R                   &kp T                                                             &kp Y           &kp U                &kp I              &kp O              &kp P          &kp MINUS
-&kp LSHFT                       &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LEFT_SHIFT F  &kp G                                                             &kp H           &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &kp SEMICOLON  &sft_semicolon RSHFT SINGLE_QUOTE
+&ht_hyper LS(LA(LC(LGUI))) ESC  &kp Q              &kp W             &kp E             &kp R                   &kp T                                                             &kp Y           &kp U                &kp I              &kp O              &kp P                       &kp MINUS
+&kp LSHFT                       &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LEFT_SHIFT F  &kp G                                                             &kp H           &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SEMICOLON  &sft_semicolon RSHFT SINGLE_QUOTE
                                 &kp Z              &kp X             &kp C             &kp V                   &kp B                                                             &kp N           &kp M                &kp COMMA          &kp PERIOD         &kp SLASH
                                                                                                                &mm_ltmac  &mm_space  &mm_app_switch  &mm_symbols  &mm_backspace  &mm_navigation
             >;
