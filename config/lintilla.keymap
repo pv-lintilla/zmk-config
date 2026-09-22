@@ -271,21 +271,18 @@
         copy {
             bindings = <&kp LG(C)>;
             key-positions = <27 28>;
-            require-prior-idle-ms = <200>;
             layers = <0 5>;
         };
 
         paste {
             bindings = <&kp LG(V)>;
             key-positions = <27 29>;
-            require-prior-idle-ms = <200>;
             layers = <0 5>;
         };
 
         screenshot {
             bindings = <&kp LG(LA(C))>;
             key-positions = <27 29 28>;
-            require-prior-idle-ms = <200>;
             layers = <0 5>;
         };
 
@@ -305,24 +302,28 @@
             bindings = <&kp C_VOLUME_UP>;
             key-positions = <6 7>;
             layers = <0 5>;
+            require-prior-idle-ms = <200>;
         };
 
         vol_down {
             bindings = <&kp C_VOL_DN>;
             key-positions = <29 30>;
             layers = <0 5>;
+            require-prior-idle-ms = <200>;
         };
 
         zoom_in {
             bindings = <&kp LG(EQUAL)>;
             key-positions = <8 9>;
             layers = <0 5>;
+            require-prior-idle-ms = <200>;
         };
 
         zoom_out {
             bindings = <&kp LG(MINUS)>;
             key-positions = <31 32>;
             layers = <0 5>;
+            require-prior-idle-ms = <200>;
         };
 
         to_caps {
