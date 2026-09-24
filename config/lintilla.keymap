@@ -96,7 +96,7 @@
         mm_ltmac: mm_ltmac {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_LTMAC";
-            bindings = <&mo 3>, <&kp LEFT_BRACKET>;
+            bindings = <&mo 1>, <&kp LEFT_BRACKET>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -105,7 +105,7 @@
         mm_space: mm_space {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_SPACE";
-            bindings = <&lt 2 SPACE>, <&kp LEFT_PARENTHESIS>;
+            bindings = <&lt 4 SPACE>, <&kp LEFT_PARENTHESIS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -123,7 +123,7 @@
         mm_symbols: mm_symbols {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_SYMBOLS";
-            bindings = <&mo 1>, <&kp RIGHT_BRACE>;
+            bindings = <&mo 2>, <&kp RIGHT_BRACE>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
@@ -141,7 +141,7 @@
         mm_navigation: mm_navigation {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_NAVIGATION";
-            bindings = <&mo 4>, <&kp RIGHT_BRACKET>;
+            bindings = <&mo 5>, <&kp RIGHT_BRACKET>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
@@ -253,7 +253,7 @@
         start_app_switch: enter_app_switch_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LGUI &kp TAB &to 4>;
+            bindings = <&kt LGUI &kp TAB &to 5>;
             label = "ENTER_APP_SWITCH_WINDOW";
         };
 
@@ -271,65 +271,65 @@
         copy {
             bindings = <&kp LG(C)>;
             key-positions = <27 28>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
 
         paste {
             bindings = <&kp LG(V)>;
             key-positions = <27 29>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
 
         screenshot {
             bindings = <&kp LG(LA(C))>;
             key-positions = <27 29 28>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
 
         undo {
             bindings = <&kp LG(Z)>;
             key-positions = <18 19>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
 
         redo {
             bindings = <&kp LG(LS(Z))>;
             key-positions = <21 20>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
 
         vol_up {
             bindings = <&kp C_VOLUME_UP>;
             key-positions = <6 7>;
-            layers = <0 5>;
+            layers = <0 6>;
             require-prior-idle-ms = <200>;
         };
 
         vol_down {
             bindings = <&kp C_VOL_DN>;
             key-positions = <29 30>;
-            layers = <0 5>;
+            layers = <0 6>;
             require-prior-idle-ms = <200>;
         };
 
         zoom_in {
             bindings = <&kp LG(EQUAL)>;
             key-positions = <8 9>;
-            layers = <0 5>;
+            layers = <0 6>;
             require-prior-idle-ms = <200>;
         };
 
         zoom_out {
             bindings = <&kp LG(MINUS)>;
             key-positions = <31 32>;
-            layers = <0 5>;
+            layers = <0 6>;
             require-prior-idle-ms = <200>;
         };
 
         to_caps {
-            bindings = <&to 5>;
+            bindings = <&to 6>;
             key-positions = <4 5 6>;
-            layers = <0 5>;
+            layers = <0 6>;
         };
     };
 
@@ -348,13 +348,33 @@
             label = "qwert";
         };
 
+        LT_MAC {
+            bindings = <
+        &trans                                                                                                                                                                                                                                &trans
+&trans  &kp LA(LS(NUMBER_1))  &kp LA(LS(NUMBER_2))  &kp LA(LS(NUMBER_3))  &kp LA(LS(NUMBER_4))  &kp LA(LS(NUMBER_5))                                  &kp LA(LS(NUMBER_6))  &kp LA(LS(NUMBER_7))  &kp LA(LS(NUMBER_8))  &kp LA(LS(NUMBER_9))  &kp LA(LS(EQUAL))  &trans
+&trans  &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LA(NUMBER_5)                                      &kp LA(NUMBER_6)      &kp LA(NUMBER_7)      &kp LA(NUMBER_8)      &kp LA(NUMBER_9)      &kp LA(EQUAL)      &trans
+        &trans                &trans                &javadoc              &print_todo_pv        &trans                                                &trans                &lambda               &full_lambda          &trans                &trans
+                                                                                                &trans                &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
         symbols {
             bindings = <
            &trans                                                                                                                                            &trans
 &kp TILDE  &kp GRAVE  &kp AT         &kp POUND        &kp DOLLAR  &kp PERCENT                                   &kp CARET   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_DIVIDE  &kp ASTERISK
 &trans     &kp SLASH  &kp BACKSLASH  &kp EXCLAMATION  &kp EQUAL   &kp ASTERISK                                  &trans      &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS   &kp LS(KP_PLUS)
-           &kp MINUS  &kp PLUS       &kp AMPERSAND    &kp PIPE    &kp PLUS                                      &kp KP_DOT  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0
+           &trans     &trans         &kp AMPERSAND    &kp PIPE    &kp PLUS                                      &kp KP_DOT  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0
                                                                   &trans        &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        numbers {
+            bindings = <
+        &trans                                                                                                               &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &kp CARET   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_DIVIDE  &kp ASTERISK
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans      &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS   &kp LS(KP_PLUS)
+        &trans  &trans  &trans  &trans  &trans                                  &kp KP_DOT  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0
+                                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -364,17 +384,7 @@
 &none  &none      &none     &none     &none      &none                               &none  &kp F7  &kp F8  &kp F9  &kp F10  &none
 &none  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &none                               &none  &kp F4  &kp F5  &kp F6  &kp F11  &none
        &none      &none     &none     &none      &none                               &none  &kp F1  &kp F2  &kp F3  &kp F12
-                                                 &none  &trans  &none  &none  &mo 6  &none
-            >;
-        };
-
-        LT_MAC {
-            bindings = <
-        &trans                                                                                                                                                                                                                                &trans
-&trans  &kp LA(LS(NUMBER_1))  &kp LA(LS(NUMBER_2))  &kp LA(LS(NUMBER_3))  &kp LA(LS(NUMBER_4))  &kp LA(LS(NUMBER_5))                                  &kp LA(LS(NUMBER_6))  &kp LA(LS(NUMBER_7))  &kp LA(LS(NUMBER_8))  &kp LA(LS(NUMBER_9))  &kp LA(LS(EQUAL))  &trans
-&trans  &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LA(NUMBER_5)                                      &kp LA(NUMBER_6)      &kp LA(NUMBER_7)      &kp LA(NUMBER_8)      &kp LA(NUMBER_9)      &kp LA(EQUAL)      &trans
-        &trans                &trans                &javadoc              &print_todo_pv        &trans                                                &trans                &lambda               &full_lambda          &trans                &trans
-                                                                                                &trans                &trans  &trans  &trans  &trans  &trans
+                                                 &none  &trans  &none  &none  &mo 7  &none
             >;
         };
 
@@ -405,16 +415,6 @@
 &trans  &trans        &trans        &trans        &trans        &trans                                        &trans  &trans  &trans  &trans  &trans      &trans
         &trans        &trans        &trans        &trans        &trans                                        &trans  &trans  &trans  &trans  &trans
                                                                 &trans        &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        numbers {
-            bindings = <
-        &trans                                                                                                               &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                  &kp CARET   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_DIVIDE  &kp ASTERISK
-&trans  &trans  &trans  &trans  &trans  &trans                                  &trans      &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS   &kp LS(KP_PLUS)
-        &trans  &trans  &trans  &trans  &trans                                  &kp KP_DOT  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0
-                                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
