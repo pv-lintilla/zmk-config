@@ -407,6 +407,16 @@
                                                                 &trans        &trans  &trans  &trans  &trans  &trans
             >;
         };
+
+        numbers {
+            bindings = <
+        &trans                                                                                                               &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &kp CARET   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_DIVIDE  &kp ASTERISK
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans      &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS   &kp LS(KP_PLUS)
+        &trans  &trans  &trans  &trans  &trans                                  &kp KP_DOT  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0
+                                        &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
     };
 };
 
