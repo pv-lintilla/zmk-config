@@ -111,19 +111,19 @@
             mods = <(MOD_LSFT)>;
         };
 
-        mm_app_switch: mm_app_switch {
+        mm_symbols: mm_symbols {
             compatible = "zmk,behavior-mod-morph";
-            label = "MM_APP_SWITCH";
-            bindings = <&td_app_switch>, <&kp LEFT_BRACE>;
+            label = "MM_SYMBOLS";
+            bindings = <&mo 2>, <&kp LEFT_BRACE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
-        mm_symbols: mm_symbols {
+        mm_numbers: mm_numbers {
             compatible = "zmk,behavior-mod-morph";
-            label = "MM_SYMBOLS";
-            bindings = <&mo 2>, <&kp RIGHT_BRACE>;
+            label = "MM_NUMBERS";
+            bindings = <&mo 3>, <&kp RIGHT_BRACE>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
@@ -338,11 +338,11 @@
 
         alphas_mac {
             bindings = <
-                                &mm_app_switch                                                                                                                                                                                                              &kp ENTER
-&ht_hyper LS(LA(LC(LGUI))) TAB  &kp Q              &kp W             &kp E             &kp R                   &kp T                                                             &kp Y           &kp U                &kp I              &kp O              &kp P                       &kp MINUS
-&ht_shift LSHFT ESCAPE          &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LEFT_SHIFT F  &kp G                                                             &kp H           &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SEMICOLON  &ht_shift RSHFT SINGLE_QUOTE
-                                &kp Z              &kp X             &kp C             &kp V                   &kp B                                                             &kp N           &kp M                &kp COMMA          &kp PERIOD         &kp SLASH
-                                                                                                               &mm_ltmac  &mm_space  &mm_app_switch  &mm_symbols  &mm_backspace  &mm_navigation
+                                &td_app_switch                                                                                                                                                                                                           &kp ENTER
+&ht_hyper LS(LA(LC(LGUI))) TAB  &kp Q              &kp W             &kp E             &kp R                   &kp T                                                          &kp Y           &kp U                &kp I              &kp O              &kp P                       &kp MINUS
+&ht_shift LSHFT ESCAPE          &hrm_left LCTRL A  &hrm_left LALT S  &hrm_left LGUI D  &hrm_left LEFT_SHIFT F  &kp G                                                          &kp H           &hrm_right RSHIFT J  &hrm_right RGUI K  &hrm_right RALT L  &hrm_right RCTRL SEMICOLON  &ht_shift RSHFT SINGLE_QUOTE
+                                &kp Z              &kp X             &kp C             &kp V                   &kp B                                                          &kp N           &kp M                &kp COMMA          &kp PERIOD         &kp SLASH
+                                                                                                               &mm_ltmac  &mm_space  &mm_symbols  &mm_numbers  &mm_backspace  &mm_navigation
             >;
 
             label = "qwert";
