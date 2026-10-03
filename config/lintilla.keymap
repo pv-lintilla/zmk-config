@@ -360,10 +360,10 @@
 
         symbols {
             bindings = <
-           &trans                                                                                                                                  &trans
-&kp TILDE  &kp GRAVE  &kp AT         &kp POUND        &kp DOLLAR  &kp PERCENT                                   &kp CARET  &trans  &trans  &trans  &trans  &trans
-&trans     &kp SLASH  &kp BACKSLASH  &kp EXCLAMATION  &kp EQUAL   &kp ASTERISK                                  &trans     &trans  &trans  &trans  &trans  &trans
-           &trans     &trans         &kp AMPERSAND    &kp PIPE    &trans                                        &trans     &trans  &trans  &trans  &trans
+           &trans                                                                                                                                               &trans
+&kp TILDE  &kp GRAVE  &kp AT         &kp POUND        &kp DOLLAR  &kp PERCENT                                   &kp CARET  &kp AMPERSAND  &kp ASTERISK  &trans  &trans  &trans
+&trans     &kp SLASH  &kp BACKSLASH  &kp EXCLAMATION  &kp EQUAL   &kp ASTERISK                                  &trans     &trans         &trans        &trans  &trans  &trans
+           &trans     &trans         &kp AMPERSAND    &kp PIPE    &trans                                        &trans     &trans         &trans        &trans  &trans
                                                                   &trans        &trans  &trans  &trans  &trans  &trans
             >;
         };
