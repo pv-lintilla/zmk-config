@@ -114,7 +114,7 @@
         mm_symbols: mm_symbols {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_SYMBOLS";
-            bindings = <&mo 2>, <&kp LEFT_BRACE>;
+            bindings = <&mo 8>, <&kp LEFT_BRACE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -420,10 +420,10 @@
 
         test_symbols {
             bindings = <
-           &trans                                                                                                                                                                             &trans
-&kp TILDE  &kp GRAVE  &kp AT_SIGN      &kp HASH           &kp DOLLAR             &kp PERCENT                                      &kp CARET              &kp AMPERSAND  &kp ASTERISK  &trans  &trans         &trans
-&trans     &trans     &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp EXCLAMATION                                  &kp RIGHT_PARENTHESIS  &kp PIPE       &trans        &trans  &trans         &trans
-           &trans     &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp EQUAL                                        &kp RIGHT_BRACKET      &trans         &trans        &trans  &kp BACKSLASH
+           &trans                                                                                                                                                                 &trans
+&kp TILDE  &kp GRAVE  &kp AT_SIGN      &kp HASH           &kp DOLLAR             &kp PERCENT                                      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &trans  &trans         &trans
+&trans     &trans     &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp EXCLAMATION                                  &trans     &kp PIPE       &trans        &trans  &trans         &trans
+           &trans     &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp EQUAL                                        &trans     &trans         &trans        &trans  &kp BACKSLASH
                                                                                  &trans           &trans  &trans  &trans  &trans  &trans
             >;
         };
